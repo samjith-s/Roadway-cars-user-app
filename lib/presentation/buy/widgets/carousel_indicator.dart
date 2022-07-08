@@ -5,11 +5,12 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 class CarouselIndicatorWidget extends StatelessWidget {
   const CarouselIndicatorWidget({
     Key? key,
-    required PageController controller,
+    required PageController controller, required this.count,
   })  : _controller = controller,
         super(key: key);
 
   final PageController _controller;
+  final int count;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class CarouselIndicatorWidget extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 15),
         child: SmoothPageIndicator(
           controller: _controller,
-          count: 5,
+          count:count ,
           effect: const ExpandingDotsEffect(
               dotHeight: 10,
               dotWidth: 10,

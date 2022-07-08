@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:roadway/core/constants/colors.dart';
+import 'package:roadway/presentation/login_and_signup/screens/login/login_screen.dart';
 import 'package:roadway/presentation/widgets/blue_icon_button.dart';
-import 'package:roadway/presentation/widgets/common_screen_scaffold.dart';
 import 'package:roadway/presentation/widgets/large_font_widget.dart';
 
 class SecondOnboardingScreen extends StatefulWidget {
@@ -132,7 +132,7 @@ class _SecondOnboardingScreenState extends State<SecondOnboardingScreen>
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: ((context) => const CommonScreenScaffold()),
+                        builder: ((context) => const LoginScreen()),
                       ),
                     );
                   },

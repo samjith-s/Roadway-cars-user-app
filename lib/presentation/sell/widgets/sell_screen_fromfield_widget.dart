@@ -8,50 +8,46 @@ class SellScreenFormFieldWidget extends StatelessWidget {
     required this.controller,
     required this.hintText,
     required this.textFieldTitle,
+    required this.validator,
   }) : super(key: key);
   final String textFieldTitle;
   final String hintText;
   final TextEditingController controller;
+  final String? Function(String?)? validator;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.only(
-            left: 25,
-            bottom: 8,
-            top: 20,
-          ),
-          child: Text(
-            textFieldTitle,
-            style: GoogleFonts.lato(fontSize: 14, fontWeight: FontWeight.w600),
-          ),
+        Text(
+          textFieldTitle,
+          style: GoogleFonts.lato(fontSize: 14, fontWeight: FontWeight.w600),
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              padding: const EdgeInsets.only(left: 15),
-              decoration: BoxDecoration(
-                  color: kLightColor.withOpacity(.3),
-                  borderRadius: BorderRadius.circular(7)),
-              width: MediaQuery.of(context).size.width - 50,
-              height: MediaQuery.of(context).size.height * .07,
-              child: Center(
-                child: TextFormField(
-                  controller: controller,
-                  decoration: InputDecoration(
-                    hintText: hintText,
-                    hintStyle:
-                        TextStyle(fontSize: 14, color: kBlack.withOpacity(.5)),
-                    border: InputBorder.none,
-                  ),
-                ),
+        Container(
+          margin: const EdgeInsets.only(top: 8, bottom: 15),
+          padding: const EdgeInsets.only(left: 15),
+          decoration: BoxDecoration(
+              color: kLightColor.withOpacity(.5),
+              borderRadius: BorderRadius.circular(7)),
+          width: MediaQuery.of(context).size.width - 50,
+          height: 48,
+          child: Center(
+            child: TextFormField(
+              style: GoogleFonts.openSans(fontSize: 14),
+              validator: validator,
+              controller: controller,
+              decoration: InputDecoration(
+                hintText: hintText,
+                hintStyle:
+                    TextStyle(fontSize: 14, color: kBlack.withOpacity(.5)),
+                border: InputBorder.none,
+                
+                //contentPadding: const EdgeInsets.symmetric(vertical: 17),
               ),
+              textCapitalization: TextCapitalization.sentences,
             ),
-          ],
+          ),
         )
       ],
     );

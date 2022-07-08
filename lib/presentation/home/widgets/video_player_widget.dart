@@ -44,8 +44,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return _videoPlayerController != null &&
-            _videoPlayerController.value.isInitialized
+    return _videoPlayerController != null && _videoPlayerController.value.isInitialized
         ? Stack(
             children: [
               AspectRatio(
@@ -56,9 +55,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
                         ? _videoPlayerController.pause()
                         : _videoPlayerController.play();
                   },
-                  child: ClipRRect(
-                      borderRadius: BorderRadius.circular(5),
-                      child: VideoPlayer(_videoPlayerController)),
+                  child: ClipRRect(borderRadius: BorderRadius.circular(5), child: VideoPlayer(_videoPlayerController)),
                 ),
               ),
               Positioned(
@@ -71,7 +68,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
                     SizedBox(
                       height: 20,
                     ),
-                    VideoPlayerIcons(iconData: FontAwesomeIcons.heart),
+                    VideoPlayerIcons(iconData: Icons.favorite),
                     SizedBox(
                       height: 20,
                     ),
@@ -94,9 +91,14 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
                             padding: const EdgeInsets.all(2),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(13),
-                              child: const Image(
-                                  image: NetworkImage(
-                                      'https://instagram.fcok7-1.fna.fbcdn.net/v/t51.2885-19/245238185_1538494949830866_3978026715016548125_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcok7-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=5LlMOdaTzx8AX9d_Mw3&edm=ALCvFkgBAAAA&ccb=7-5&oh=00_AT80cS49gPvwvQSsZeqDXKoJhgRNdQ7tQza15zaXWPQ3lQ&oe=62A5C699&_nc_sid=643ae9')),
+                              child: Image(
+                                image: NetworkImage(
+                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2C_xadF4WT19MkU5PpYyU8njyMgMIuttwXQ&usqp=CAU',
+                                ),
+                                errorBuilder: (BuildContext context, Object _, s) {
+                                  return const SizedBox();
+                                },
+                              ),
                             ),
                           ),
                         ),
@@ -166,7 +168,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
                                   borderRadius: BorderRadius.circular(13),
                                   child: const Image(
                                     image: NetworkImage(
-                                      'https://instagram.fcok7-1.fna.fbcdn.net/v/t51.2885-19/245238185_1538494949830866_3978026715016548125_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcok7-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=5LlMOdaTzx8AX9d_Mw3&edm=ALCvFkgBAAAA&ccb=7-5&oh=00_AT80cS49gPvwvQSsZeqDXKoJhgRNdQ7tQza15zaXWPQ3lQ&oe=62A5C699&_nc_sid=643ae9',
+                                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2C_xadF4WT19MkU5PpYyU8njyMgMIuttwXQ&usqp=CAU',
                                     ),
                                   ),
                                 ),

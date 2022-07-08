@@ -20,7 +20,10 @@ class CarouselBottomTitleWidget extends StatelessWidget {
         Text(
           'The premium marketplace to buy & sell',
           style: GoogleFonts.roboto(
-              fontSize: 8, fontWeight: FontWeight.bold, color: kGray),
+            fontSize: 8,
+            fontWeight: FontWeight.bold,
+            color: kBlack.withOpacity(.7),
+          ),
         ),
         const SizedBox(height: 4),
         Text(

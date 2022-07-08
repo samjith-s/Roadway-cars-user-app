@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:roadway/core/constants/colors.dart';
+import 'package:roadway/core/toast.dart';
 import 'package:roadway/presentation/home/widgets/carousel_bottom_titile.dart';
 import 'package:roadway/presentation/home/widgets/carousel_widget.dart';
 import 'package:roadway/presentation/home/widgets/video_player_widget.dart';
-import 'package:roadway/presentation/widgets/costum_appbar_widget.dart';
-import 'package:roadway/presentation/widgets/costum_navbar_widget.dart';
+
+import '../../../application/internet/internet_cubit.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,14 +20,20 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      //backgroundColor: kWhite,
-      // appBar: PreferredSize(
-      //   preferredSize: Size(MediaQuery.of(context).size.width, 50),
-      //   child: const CustomAppBar(),
-      // ),
       body: SafeArea(
           child: ListView(
         children: [
+          BlocBuilder<InternetCubit, InternetState>(
+            builder: (context, netstate) {
+              if (!netstate.networkOn) {
+                showToast(
+                  msg: 'No network connection. Please check your network',
+                  bgcolor: kBlack,
+                );
+              }
+              return const SizedBox();
+            },
+          ),
           const HomeScreenCarousel(),
           const CarouselBottomTitleWidget(),
           ListView.builder(

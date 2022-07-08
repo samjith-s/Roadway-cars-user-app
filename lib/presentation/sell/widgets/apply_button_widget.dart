@@ -1,31 +1,32 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:roadway/core/constants/colors.dart';
 
-class ApplyButton extends StatelessWidget {
-  const ApplyButton({
+class SubmitButton extends StatelessWidget {
+  final void Function()? onPressed;
+  const SubmitButton({
     Key? key,
+    required this.onPressed,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 25, top: 30),
+    return SizedBox(
+      height: 48,
+      //width: double.infinity,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: OutlinedButton.styleFrom(
-          backgroundColor: kGreen,
+          backgroundColor: const Color.fromARGB(255, 237, 150, 21),
           padding: const EdgeInsets.symmetric(
-            horizontal: 40,
-            vertical: 15,
+            horizontal: 30,
+            // vertical: 15,
           ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
         ),
         child: Text(
-          'Apply',
+          'Submit',
           style: GoogleFonts.lato(fontSize: 18),
         ),
       ),
