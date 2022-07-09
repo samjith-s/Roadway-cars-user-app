@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:roadway/core/constants/colors.dart';
 import 'package:roadway/core/constants/texts.dart';
 import 'package:roadway/presentation/buy/screens/buy_screen.dart';
-import 'package:roadway/presentation/buy/widgets/filter_sheet_buttons_row.dart';
-import 'package:roadway/presentation/buy/widgets/filter_sidebar_custom_widget.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_sheet_buttons_row.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_sidebar_custom_widget.dart';
 import 'package:roadway/presentation/buy/widgets/selected_filterlist_show_listview.dart';
 
 class BuyScreenFilterButtonWidget extends StatelessWidget {

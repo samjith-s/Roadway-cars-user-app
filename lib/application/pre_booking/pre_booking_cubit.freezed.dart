@@ -76,11 +76,11 @@ class _$PreBookingStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_PreBookingStateCopyWith<$Res>
+abstract class _$PreBookingStateCopyWith<$Res>
     implements $PreBookingStateCopyWith<$Res> {
-  factory _$$_PreBookingStateCopyWith(
-          _$_PreBookingState value, $Res Function(_$_PreBookingState) then) =
-      __$$_PreBookingStateCopyWithImpl<$Res>;
+  factory _$PreBookingStateCopyWith(
+          _PreBookingState value, $Res Function(_PreBookingState) then) =
+      __$PreBookingStateCopyWithImpl<$Res>;
   @override
   $Res call(
       {List<PreBooking> totalBookings,
@@ -90,15 +90,15 @@ abstract class _$$_PreBookingStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PreBookingStateCopyWithImpl<$Res>
+class __$PreBookingStateCopyWithImpl<$Res>
     extends _$PreBookingStateCopyWithImpl<$Res>
-    implements _$$_PreBookingStateCopyWith<$Res> {
-  __$$_PreBookingStateCopyWithImpl(
-      _$_PreBookingState _value, $Res Function(_$_PreBookingState) _then)
-      : super(_value, (v) => _then(v as _$_PreBookingState));
+    implements _$PreBookingStateCopyWith<$Res> {
+  __$PreBookingStateCopyWithImpl(
+      _PreBookingState _value, $Res Function(_PreBookingState) _then)
+      : super(_value, (v) => _then(v as _PreBookingState));
 
   @override
-  _$_PreBookingState get _value => super._value as _$_PreBookingState;
+  _PreBookingState get _value => super._value as _PreBookingState;
 
   @override
   $Res call({
@@ -107,9 +107,9 @@ class __$$_PreBookingStateCopyWithImpl<$Res>
     Object? isError = freezed,
     Object? errorText = freezed,
   }) {
-    return _then(_$_PreBookingState(
+    return _then(_PreBookingState(
       totalBookings: totalBookings == freezed
-          ? _value._totalBookings
+          ? _value.totalBookings
           : totalBookings // ignore: cast_nullable_to_non_nullable
               as List<PreBooking>,
       isLoading: isLoading == freezed
@@ -161,9 +161,9 @@ class _$_PreBookingState implements _PreBookingState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PreBookingState &&
+            other is _PreBookingState &&
             const DeepCollectionEquality()
-                .equals(other._totalBookings, _totalBookings) &&
+                .equals(other.totalBookings, totalBookings) &&
             const DeepCollectionEquality().equals(other.isLoading, isLoading) &&
             const DeepCollectionEquality().equals(other.isError, isError) &&
             const DeepCollectionEquality().equals(other.errorText, errorText));
@@ -172,15 +172,15 @@ class _$_PreBookingState implements _PreBookingState {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(_totalBookings),
+      const DeepCollectionEquality().hash(totalBookings),
       const DeepCollectionEquality().hash(isLoading),
       const DeepCollectionEquality().hash(isError),
       const DeepCollectionEquality().hash(errorText));
 
   @JsonKey(ignore: true)
   @override
-  _$$_PreBookingStateCopyWith<_$_PreBookingState> get copyWith =>
-      __$$_PreBookingStateCopyWithImpl<_$_PreBookingState>(this, _$identity);
+  _$PreBookingStateCopyWith<_PreBookingState> get copyWith =>
+      __$PreBookingStateCopyWithImpl<_PreBookingState>(this, _$identity);
 }
 
 abstract class _PreBookingState implements PreBookingState {
@@ -200,6 +200,6 @@ abstract class _PreBookingState implements PreBookingState {
   String get errorText => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_PreBookingStateCopyWith<_$_PreBookingState> get copyWith =>
+  _$PreBookingStateCopyWith<_PreBookingState> get copyWith =>
       throw _privateConstructorUsedError;
 }

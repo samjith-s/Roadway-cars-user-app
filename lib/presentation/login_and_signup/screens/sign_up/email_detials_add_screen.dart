@@ -8,7 +8,7 @@ import 'package:roadway/application/internet/internet_cubit.dart';
 import 'package:roadway/application/signin/signin_cubit.dart';
 import 'package:roadway/core/constants/colors.dart';
 import 'package:roadway/core/constants/texts.dart';
-import 'package:roadway/core/toast.dart';
+import 'package:roadway/core/utils/toast.dart';
 import 'package:roadway/domain/user/user_model.dart';
 import 'package:roadway/firebase_functions.dart';
 import 'package:roadway/presentation/login_and_signup/screens/sign_up/mobile_number_verify_screen.dart';

@@ -5,7 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:roadway/core/toast.dart';
+import 'package:roadway/core/utils/toast.dart';
 import 'package:roadway/domain/pre_booking/pre_booking_model.dart';
 import 'package:roadway/domain/pre_booking/pre_booking_services.dart';
 

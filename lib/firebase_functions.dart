@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:roadway/core/constants/colors.dart';
-import 'package:roadway/core/toast.dart';
+import 'package:roadway/core/utils/toast.dart';
 import 'package:roadway/presentation/login_and_signup/screens/login/login_screen.dart';
 import 'package:roadway/presentation/login_and_signup/screens/sign_up/email_detials_add_screen.dart';
 import 'package:roadway/presentation/login_and_signup/screens/sign_up/otp_verification_screen.dart';

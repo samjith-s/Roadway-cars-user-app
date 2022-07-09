@@ -3,15 +3,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:roadway/application/buy/buy_screen_bloc.dart';
 import 'package:roadway/presentation/buy/screens/buy_screen.dart';
-import 'package:roadway/presentation/buy/widgets/filter_bodytype_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_brands_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_budget_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_fueltype_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_number_owner_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_segments_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_year_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_bodytype_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_brands_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_budget_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_fueltype_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_number_owner_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_segments_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_year_view.dart';
 
-import '../../../core/constants/colors.dart';
+import '../../../../core/constants/colors.dart';
 
 class FilterButtonsRowWidget extends StatelessWidget {
   const FilterButtonsRowWidget({

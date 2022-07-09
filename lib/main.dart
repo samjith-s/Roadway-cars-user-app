@@ -7,6 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:roadway/application/Chat/chat_cubit.dart';
 import 'package:roadway/application/buy/buy_screen_bloc.dart';
+import 'package:roadway/application/favourites/favourites_bloc.dart';
 import 'package:roadway/application/internet/internet_cubit.dart';
 import 'package:roadway/application/pre_booking/pre_booking_cubit.dart';
 import 'package:roadway/application/sell_request/sell_request_cubit.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => SellRequestCubit()),
         BlocProvider(create: (context) => UserCubit()),
         BlocProvider(create: (context) => InternetCubit()),
+        BlocProvider(create: (context) => FavouritesBloc()),
         BlocProvider(create: (context) => getIt<ChatCubit>()),
         BlocProvider(create: (context) => getIt<PreBookingCubit>())
       ],

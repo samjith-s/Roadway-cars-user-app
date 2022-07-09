@@ -82,11 +82,11 @@ class _$SigninStateCopyWithImpl<$Res> implements $SigninStateCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$_SigninStateCopyWith<$Res>
+abstract class _$SigninStateCopyWith<$Res>
     implements $SigninStateCopyWith<$Res> {
-  factory _$$_SigninStateCopyWith(
-          _$_SigninState value, $Res Function(_$_SigninState) then) =
-      __$$_SigninStateCopyWithImpl<$Res>;
+  factory _$SigninStateCopyWith(
+          _SigninState value, $Res Function(_SigninState) then) =
+      __$SigninStateCopyWithImpl<$Res>;
   @override
   $Res call(
       {bool showError,
@@ -97,14 +97,14 @@ abstract class _$$_SigninStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_SigninStateCopyWithImpl<$Res> extends _$SigninStateCopyWithImpl<$Res>
-    implements _$$_SigninStateCopyWith<$Res> {
-  __$$_SigninStateCopyWithImpl(
-      _$_SigninState _value, $Res Function(_$_SigninState) _then)
-      : super(_value, (v) => _then(v as _$_SigninState));
+class __$SigninStateCopyWithImpl<$Res> extends _$SigninStateCopyWithImpl<$Res>
+    implements _$SigninStateCopyWith<$Res> {
+  __$SigninStateCopyWithImpl(
+      _SigninState _value, $Res Function(_SigninState) _then)
+      : super(_value, (v) => _then(v as _SigninState));
 
   @override
-  _$_SigninState get _value => super._value as _$_SigninState;
+  _SigninState get _value => super._value as _SigninState;
 
   @override
   $Res call({
@@ -114,7 +114,7 @@ class __$$_SigninStateCopyWithImpl<$Res> extends _$SigninStateCopyWithImpl<$Res>
     Object? isImgUploding = freezed,
     Object? imgUrl = freezed,
   }) {
-    return _then(_$_SigninState(
+    return _then(_SigninState(
       showError: showError == freezed
           ? _value.showError
           : showError // ignore: cast_nullable_to_non_nullable
@@ -169,7 +169,7 @@ class _$_SigninState implements _SigninState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SigninState &&
+            other is _SigninState &&
             const DeepCollectionEquality().equals(other.showError, showError) &&
             const DeepCollectionEquality().equals(other.errorMsg, errorMsg) &&
             const DeepCollectionEquality()
@@ -190,8 +190,8 @@ class _$_SigninState implements _SigninState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_SigninStateCopyWith<_$_SigninState> get copyWith =>
-      __$$_SigninStateCopyWithImpl<_$_SigninState>(this, _$identity);
+  _$SigninStateCopyWith<_SigninState> get copyWith =>
+      __$SigninStateCopyWithImpl<_SigninState>(this, _$identity);
 }
 
 abstract class _SigninState implements SigninState {
@@ -214,6 +214,6 @@ abstract class _SigninState implements SigninState {
   String? get imgUrl => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_SigninStateCopyWith<_$_SigninState> get copyWith =>
+  _$SigninStateCopyWith<_SigninState> get copyWith =>
       throw _privateConstructorUsedError;
 }

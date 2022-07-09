@@ -54,31 +54,31 @@ class _$InternetStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_InternetStateCopyWith<$Res>
+abstract class _$InternetStateCopyWith<$Res>
     implements $InternetStateCopyWith<$Res> {
-  factory _$$_InternetStateCopyWith(
-          _$_InternetState value, $Res Function(_$_InternetState) then) =
-      __$$_InternetStateCopyWithImpl<$Res>;
+  factory _$InternetStateCopyWith(
+          _InternetState value, $Res Function(_InternetState) then) =
+      __$InternetStateCopyWithImpl<$Res>;
   @override
   $Res call({bool networkOn});
 }
 
 /// @nodoc
-class __$$_InternetStateCopyWithImpl<$Res>
+class __$InternetStateCopyWithImpl<$Res>
     extends _$InternetStateCopyWithImpl<$Res>
-    implements _$$_InternetStateCopyWith<$Res> {
-  __$$_InternetStateCopyWithImpl(
-      _$_InternetState _value, $Res Function(_$_InternetState) _then)
-      : super(_value, (v) => _then(v as _$_InternetState));
+    implements _$InternetStateCopyWith<$Res> {
+  __$InternetStateCopyWithImpl(
+      _InternetState _value, $Res Function(_InternetState) _then)
+      : super(_value, (v) => _then(v as _InternetState));
 
   @override
-  _$_InternetState get _value => super._value as _$_InternetState;
+  _InternetState get _value => super._value as _InternetState;
 
   @override
   $Res call({
     Object? networkOn = freezed,
   }) {
-    return _then(_$_InternetState(
+    return _then(_InternetState(
       networkOn: networkOn == freezed
           ? _value.networkOn
           : networkOn // ignore: cast_nullable_to_non_nullable
@@ -104,7 +104,7 @@ class _$_InternetState implements _InternetState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_InternetState &&
+            other is _InternetState &&
             const DeepCollectionEquality().equals(other.networkOn, networkOn));
   }
 
@@ -114,8 +114,8 @@ class _$_InternetState implements _InternetState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_InternetStateCopyWith<_$_InternetState> get copyWith =>
-      __$$_InternetStateCopyWithImpl<_$_InternetState>(this, _$identity);
+  _$InternetStateCopyWith<_InternetState> get copyWith =>
+      __$InternetStateCopyWithImpl<_InternetState>(this, _$identity);
 }
 
 abstract class _InternetState implements InternetState {
@@ -126,6 +126,6 @@ abstract class _InternetState implements InternetState {
   bool get networkOn => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_InternetStateCopyWith<_$_InternetState> get copyWith =>
+  _$InternetStateCopyWith<_InternetState> get copyWith =>
       throw _privateConstructorUsedError;
 }

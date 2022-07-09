@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:roadway/core/constants/colors.dart';
-import 'package:roadway/core/toast.dart';
+import 'package:roadway/core/utils/toast.dart';
 import 'package:roadway/presentation/home/widgets/carousel_bottom_titile.dart';
 import 'package:roadway/presentation/home/widgets/carousel_widget.dart';
 import 'package:roadway/presentation/home/widgets/video_player_widget.dart';

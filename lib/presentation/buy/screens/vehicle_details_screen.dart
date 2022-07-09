@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:roadway/application/buy/buy_screen_bloc.dart';
 import 'package:roadway/core/constants/colors.dart';
 import 'package:roadway/domain/buy_screen/models/vehicle_model.dart';
 import 'package:roadway/presentation/buy/screens/search_result_seeall_sceen.dart';
 import 'package:roadway/presentation/buy/widgets/carousel_indicator.dart';
+import 'package:roadway/presentation/buy/widgets/favorites_icon_button.dart';
 import 'package:roadway/presentation/chat/chat_screen.dart';
 
 class VehicleDetailsShowScreen extends StatefulWidget {
@@ -98,6 +98,13 @@ class _VehicleDetailsShowScreenState extends State<VehicleDetailsShowScreen> {
                           CarouselIndicatorWidget(
                             controller: _controller,
                             count: vehicle.images.length,
+                          ),
+                          Positioned(
+                            right: 10,
+                            top: 10,
+                            child: FavouritesButton(
+                              vehicleId: vehicle.id!,
+                            ),
                           )
                         ],
                       ),

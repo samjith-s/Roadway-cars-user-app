@@ -8,19 +8,17 @@ import 'package:roadway/presentation/buy/screens/buy_screen.dart';
 import 'package:roadway/presentation/buy/screens/vehicle_details_screen.dart';
 import 'package:roadway/presentation/buy/widgets/buyscreen_filter_button_widget.dart';
 import 'package:roadway/presentation/buy/widgets/details_container_on_search_result.dart';
-import 'package:roadway/presentation/buy/widgets/filter_brands_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_budget_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_fueltype_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_number_owner_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_year_view.dart';
+import 'package:roadway/presentation/buy/widgets/favorites_icon_button.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_brands_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_budget_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_fueltype_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_number_owner_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_year_view.dart';
 import 'package:roadway/presentation/widgets/custom_searchfield_widget.dart';
 
 class SearchResultSeeAllScreen extends StatelessWidget {
   final bool focusOn;
-  const SearchResultSeeAllScreen({
-    Key? key,
-    required this.focusOn
-  }) : super(key: key);
+  const SearchResultSeeAllScreen({Key? key, required this.focusOn}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -91,7 +89,9 @@ class SearchResultSeeAllScreen extends StatelessWidget {
           body: Column(
             children: [
               const SizedBox(height: 20),
-              CustomSearchFieldWidget(focusOn: focusOn,),
+              CustomSearchFieldWidget(
+                focusOn: focusOn,
+              ),
               Expanded(
                 child: ListView(
                   shrinkWrap: true,
@@ -257,6 +257,13 @@ class SearchAndFilterResultListView extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Positioned(
+                      right: 10,
+                      top: 10,
+                      child: FavouritesButton(
+                        vehicleId: vehicle.id!,
+                      ),
+                    )
                   ],
                 ),
               ),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:roadway/core/constants/colors.dart';
 import 'package:roadway/presentation/dash/screens/pre_booking_screen.dart';
 import 'package:roadway/presentation/dash/widgets/dash_tile_widget.dart';
+import 'package:roadway/presentation/favourites/favourites_screen.dart';
 
 class DashScreen extends StatelessWidget {
   const DashScreen({Key? key}) : super(key: key);
@@ -80,7 +81,14 @@ class DashScreen extends StatelessWidget {
                 );
               },
             ),
-            const CustomDashTilewidget(
+             CustomDashTilewidget(
+              onTap: (){
+                 Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (ctx) => const FavouritesVehiclesScreen(),
+                  ),
+                );
+              },
               title: "My Favourites",
               subTitle: "see your favourite vehicle",
               leading: Icons.favorite,

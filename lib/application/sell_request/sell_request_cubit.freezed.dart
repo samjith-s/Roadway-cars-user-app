@@ -54,31 +54,31 @@ class _$SellRequestStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_SellRequestStateCopyWith<$Res>
+abstract class _$SellRequestStateCopyWith<$Res>
     implements $SellRequestStateCopyWith<$Res> {
-  factory _$$_SellRequestStateCopyWith(
-          _$_SellRequestState value, $Res Function(_$_SellRequestState) then) =
-      __$$_SellRequestStateCopyWithImpl<$Res>;
+  factory _$SellRequestStateCopyWith(
+          _SellRequestState value, $Res Function(_SellRequestState) then) =
+      __$SellRequestStateCopyWithImpl<$Res>;
   @override
   $Res call({int selectedDate});
 }
 
 /// @nodoc
-class __$$_SellRequestStateCopyWithImpl<$Res>
+class __$SellRequestStateCopyWithImpl<$Res>
     extends _$SellRequestStateCopyWithImpl<$Res>
-    implements _$$_SellRequestStateCopyWith<$Res> {
-  __$$_SellRequestStateCopyWithImpl(
-      _$_SellRequestState _value, $Res Function(_$_SellRequestState) _then)
-      : super(_value, (v) => _then(v as _$_SellRequestState));
+    implements _$SellRequestStateCopyWith<$Res> {
+  __$SellRequestStateCopyWithImpl(
+      _SellRequestState _value, $Res Function(_SellRequestState) _then)
+      : super(_value, (v) => _then(v as _SellRequestState));
 
   @override
-  _$_SellRequestState get _value => super._value as _$_SellRequestState;
+  _SellRequestState get _value => super._value as _SellRequestState;
 
   @override
   $Res call({
     Object? selectedDate = freezed,
   }) {
-    return _then(_$_SellRequestState(
+    return _then(_SellRequestState(
       selectedDate: selectedDate == freezed
           ? _value.selectedDate
           : selectedDate // ignore: cast_nullable_to_non_nullable
@@ -104,7 +104,7 @@ class _$_SellRequestState implements _SellRequestState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SellRequestState &&
+            other is _SellRequestState &&
             const DeepCollectionEquality()
                 .equals(other.selectedDate, selectedDate));
   }
@@ -115,8 +115,8 @@ class _$_SellRequestState implements _SellRequestState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_SellRequestStateCopyWith<_$_SellRequestState> get copyWith =>
-      __$$_SellRequestStateCopyWithImpl<_$_SellRequestState>(this, _$identity);
+  _$SellRequestStateCopyWith<_SellRequestState> get copyWith =>
+      __$SellRequestStateCopyWithImpl<_SellRequestState>(this, _$identity);
 }
 
 abstract class _SellRequestState implements SellRequestState {
@@ -127,6 +127,6 @@ abstract class _SellRequestState implements SellRequestState {
   int get selectedDate => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_SellRequestStateCopyWith<_$_SellRequestState> get copyWith =>
+  _$SellRequestStateCopyWith<_SellRequestState> get copyWith =>
       throw _privateConstructorUsedError;
 }

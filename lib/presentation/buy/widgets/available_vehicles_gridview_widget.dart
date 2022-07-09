@@ -5,6 +5,7 @@ import 'package:roadway/core/constants/colors.dart';
 import 'package:roadway/domain/buy_screen/models/vehicle_model.dart';
 import 'package:roadway/presentation/buy/screens/search_result_seeall_sceen.dart';
 import 'package:roadway/presentation/buy/screens/vehicle_details_screen.dart';
+import 'package:roadway/presentation/buy/widgets/favorites_icon_button.dart';
 
 class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
   final BuyScreenState state;
@@ -33,6 +34,7 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
         itemBuilder: (contx, index) {
           Vehicle vehicle = state.vehiclesList[index];
           return GestureDetector(
+            //signle vehicle item ontap function
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -46,7 +48,7 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
             child: LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
               return Container(
                 decoration: const BoxDecoration(
-                  color: kBlack, //Color.fromARGB(255, 237, 150, 21), //Color(0xFF22262c),
+                  color: kBlack,
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(15),
                     bottomLeft: Radius.circular(15),
@@ -54,6 +56,7 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
                 ),
                 child: Stack(
                   children: [
+                    //vehicle image showing section
                     SizedBox(
                       child: ClipRRect(
                         borderRadius: const BorderRadius.only(
@@ -76,6 +79,7 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
                         ),
                       ),
                     ),
+
                     Positioned(
                       bottom: 0,
                       right: 0,
@@ -103,6 +107,7 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
+                                    //Brand name text
                                     Text(
                                       vehicle.brand,
                                       maxLines: 1,
@@ -113,6 +118,7 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
+                                    //Model name text
                                     Text(
                                       vehicle.model,
                                       style: GoogleFonts.nunito(
@@ -123,6 +129,7 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
                                     ),
                                   ],
                                 ),
+                                //Price show text
                                 Container(
                                   width: 55,
                                   padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 3),
@@ -144,6 +151,11 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
                           ),
                         ),
                       ),
+                    ),
+                    Positioned(
+                      right: 5,
+                      top: 5,
+                      child: FavouritesButton(vehicleId: vehicle.id!),
                     )
                   ],
                 ),
@@ -151,7 +163,7 @@ class AvailableVehiclesGridviewBuyscreen extends StatelessWidget {
             }),
           );
         },
-        itemCount: state.vehiclesList.length, 
+        itemCount: state.vehiclesList.length,
       ),
     );
   }

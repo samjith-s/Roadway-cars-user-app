@@ -122,22 +122,22 @@ class _$BuyScreenEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$GetAllVehiclesCopyWith<$Res> {
-  factory _$$GetAllVehiclesCopyWith(
-          _$GetAllVehicles value, $Res Function(_$GetAllVehicles) then) =
-      __$$GetAllVehiclesCopyWithImpl<$Res>;
+abstract class $GetAllVehiclesCopyWith<$Res> {
+  factory $GetAllVehiclesCopyWith(
+          GetAllVehicles value, $Res Function(GetAllVehicles) then) =
+      _$GetAllVehiclesCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$GetAllVehiclesCopyWithImpl<$Res>
+class _$GetAllVehiclesCopyWithImpl<$Res>
     extends _$BuyScreenEventCopyWithImpl<$Res>
-    implements _$$GetAllVehiclesCopyWith<$Res> {
-  __$$GetAllVehiclesCopyWithImpl(
-      _$GetAllVehicles _value, $Res Function(_$GetAllVehicles) _then)
-      : super(_value, (v) => _then(v as _$GetAllVehicles));
+    implements $GetAllVehiclesCopyWith<$Res> {
+  _$GetAllVehiclesCopyWithImpl(
+      GetAllVehicles _value, $Res Function(GetAllVehicles) _then)
+      : super(_value, (v) => _then(v as GetAllVehicles));
 
   @override
-  _$GetAllVehicles get _value => super._value as _$GetAllVehicles;
+  GetAllVehicles get _value => super._value as GetAllVehicles;
 }
 
 /// @nodoc
@@ -153,7 +153,7 @@ class _$GetAllVehicles implements GetAllVehicles {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$GetAllVehicles);
+        (other.runtimeType == runtimeType && other is GetAllVehicles);
   }
 
   @override
@@ -275,22 +275,22 @@ abstract class GetAllVehicles implements BuyScreenEvent {
 }
 
 /// @nodoc
-abstract class _$$GetAllBrandsCopyWith<$Res> {
-  factory _$$GetAllBrandsCopyWith(
-          _$GetAllBrands value, $Res Function(_$GetAllBrands) then) =
-      __$$GetAllBrandsCopyWithImpl<$Res>;
+abstract class $GetAllBrandsCopyWith<$Res> {
+  factory $GetAllBrandsCopyWith(
+          GetAllBrands value, $Res Function(GetAllBrands) then) =
+      _$GetAllBrandsCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$GetAllBrandsCopyWithImpl<$Res>
+class _$GetAllBrandsCopyWithImpl<$Res>
     extends _$BuyScreenEventCopyWithImpl<$Res>
-    implements _$$GetAllBrandsCopyWith<$Res> {
-  __$$GetAllBrandsCopyWithImpl(
-      _$GetAllBrands _value, $Res Function(_$GetAllBrands) _then)
-      : super(_value, (v) => _then(v as _$GetAllBrands));
+    implements $GetAllBrandsCopyWith<$Res> {
+  _$GetAllBrandsCopyWithImpl(
+      GetAllBrands _value, $Res Function(GetAllBrands) _then)
+      : super(_value, (v) => _then(v as GetAllBrands));
 
   @override
-  _$GetAllBrands get _value => super._value as _$GetAllBrands;
+  GetAllBrands get _value => super._value as GetAllBrands;
 }
 
 /// @nodoc
@@ -306,7 +306,7 @@ class _$GetAllBrands implements GetAllBrands {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$GetAllBrands);
+        (other.runtimeType == runtimeType && other is GetAllBrands);
   }
 
   @override
@@ -428,22 +428,22 @@ abstract class GetAllBrands implements BuyScreenEvent {
 }
 
 /// @nodoc
-abstract class _$$GetAllSegmentsCopyWith<$Res> {
-  factory _$$GetAllSegmentsCopyWith(
-          _$GetAllSegments value, $Res Function(_$GetAllSegments) then) =
-      __$$GetAllSegmentsCopyWithImpl<$Res>;
+abstract class $GetAllSegmentsCopyWith<$Res> {
+  factory $GetAllSegmentsCopyWith(
+          GetAllSegments value, $Res Function(GetAllSegments) then) =
+      _$GetAllSegmentsCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$GetAllSegmentsCopyWithImpl<$Res>
+class _$GetAllSegmentsCopyWithImpl<$Res>
     extends _$BuyScreenEventCopyWithImpl<$Res>
-    implements _$$GetAllSegmentsCopyWith<$Res> {
-  __$$GetAllSegmentsCopyWithImpl(
-      _$GetAllSegments _value, $Res Function(_$GetAllSegments) _then)
-      : super(_value, (v) => _then(v as _$GetAllSegments));
+    implements $GetAllSegmentsCopyWith<$Res> {
+  _$GetAllSegmentsCopyWithImpl(
+      GetAllSegments _value, $Res Function(GetAllSegments) _then)
+      : super(_value, (v) => _then(v as GetAllSegments));
 
   @override
-  _$GetAllSegments get _value => super._value as _$GetAllSegments;
+  GetAllSegments get _value => super._value as GetAllSegments;
 }
 
 /// @nodoc
@@ -459,7 +459,7 @@ class _$GetAllSegments implements GetAllSegments {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$GetAllSegments);
+        (other.runtimeType == runtimeType && other is GetAllSegments);
   }
 
   @override
@@ -581,22 +581,22 @@ abstract class GetAllSegments implements BuyScreenEvent {
 }
 
 /// @nodoc
-abstract class _$$GetAllBodyTypesCopyWith<$Res> {
-  factory _$$GetAllBodyTypesCopyWith(
-          _$GetAllBodyTypes value, $Res Function(_$GetAllBodyTypes) then) =
-      __$$GetAllBodyTypesCopyWithImpl<$Res>;
+abstract class $GetAllBodyTypesCopyWith<$Res> {
+  factory $GetAllBodyTypesCopyWith(
+          GetAllBodyTypes value, $Res Function(GetAllBodyTypes) then) =
+      _$GetAllBodyTypesCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$GetAllBodyTypesCopyWithImpl<$Res>
+class _$GetAllBodyTypesCopyWithImpl<$Res>
     extends _$BuyScreenEventCopyWithImpl<$Res>
-    implements _$$GetAllBodyTypesCopyWith<$Res> {
-  __$$GetAllBodyTypesCopyWithImpl(
-      _$GetAllBodyTypes _value, $Res Function(_$GetAllBodyTypes) _then)
-      : super(_value, (v) => _then(v as _$GetAllBodyTypes));
+    implements $GetAllBodyTypesCopyWith<$Res> {
+  _$GetAllBodyTypesCopyWithImpl(
+      GetAllBodyTypes _value, $Res Function(GetAllBodyTypes) _then)
+      : super(_value, (v) => _then(v as GetAllBodyTypes));
 
   @override
-  _$GetAllBodyTypes get _value => super._value as _$GetAllBodyTypes;
+  GetAllBodyTypes get _value => super._value as GetAllBodyTypes;
 }
 
 /// @nodoc
@@ -612,7 +612,7 @@ class _$GetAllBodyTypes implements GetAllBodyTypes {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$GetAllBodyTypes);
+        (other.runtimeType == runtimeType && other is GetAllBodyTypes);
   }
 
   @override
@@ -734,29 +734,29 @@ abstract class GetAllBodyTypes implements BuyScreenEvent {
 }
 
 /// @nodoc
-abstract class _$$SearchVehicleCopyWith<$Res> {
-  factory _$$SearchVehicleCopyWith(
-          _$SearchVehicle value, $Res Function(_$SearchVehicle) then) =
-      __$$SearchVehicleCopyWithImpl<$Res>;
+abstract class $SearchVehicleCopyWith<$Res> {
+  factory $SearchVehicleCopyWith(
+          SearchVehicle value, $Res Function(SearchVehicle) then) =
+      _$SearchVehicleCopyWithImpl<$Res>;
   $Res call({String searchKey});
 }
 
 /// @nodoc
-class __$$SearchVehicleCopyWithImpl<$Res>
+class _$SearchVehicleCopyWithImpl<$Res>
     extends _$BuyScreenEventCopyWithImpl<$Res>
-    implements _$$SearchVehicleCopyWith<$Res> {
-  __$$SearchVehicleCopyWithImpl(
-      _$SearchVehicle _value, $Res Function(_$SearchVehicle) _then)
-      : super(_value, (v) => _then(v as _$SearchVehicle));
+    implements $SearchVehicleCopyWith<$Res> {
+  _$SearchVehicleCopyWithImpl(
+      SearchVehicle _value, $Res Function(SearchVehicle) _then)
+      : super(_value, (v) => _then(v as SearchVehicle));
 
   @override
-  _$SearchVehicle get _value => super._value as _$SearchVehicle;
+  SearchVehicle get _value => super._value as SearchVehicle;
 
   @override
   $Res call({
     Object? searchKey = freezed,
   }) {
-    return _then(_$SearchVehicle(
+    return _then(SearchVehicle(
       searchKey: searchKey == freezed
           ? _value.searchKey
           : searchKey // ignore: cast_nullable_to_non_nullable
@@ -782,7 +782,7 @@ class _$SearchVehicle implements SearchVehicle {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SearchVehicle &&
+            other is SearchVehicle &&
             const DeepCollectionEquality().equals(other.searchKey, searchKey));
   }
 
@@ -792,8 +792,8 @@ class _$SearchVehicle implements SearchVehicle {
 
   @JsonKey(ignore: true)
   @override
-  _$$SearchVehicleCopyWith<_$SearchVehicle> get copyWith =>
-      __$$SearchVehicleCopyWithImpl<_$SearchVehicle>(this, _$identity);
+  $SearchVehicleCopyWith<SearchVehicle> get copyWith =>
+      _$SearchVehicleCopyWithImpl<SearchVehicle>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -912,15 +912,15 @@ abstract class SearchVehicle implements BuyScreenEvent {
 
   String get searchKey => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  _$$SearchVehicleCopyWith<_$SearchVehicle> get copyWith =>
+  $SearchVehicleCopyWith<SearchVehicle> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FilterVehicleCopyWith<$Res> {
-  factory _$$FilterVehicleCopyWith(
-          _$FilterVehicle value, $Res Function(_$FilterVehicle) then) =
-      __$$FilterVehicleCopyWithImpl<$Res>;
+abstract class $FilterVehicleCopyWith<$Res> {
+  factory $FilterVehicleCopyWith(
+          FilterVehicle value, $Res Function(FilterVehicle) then) =
+      _$FilterVehicleCopyWithImpl<$Res>;
   $Res call(
       {List<String>? brands,
       List<String>? fuels,
@@ -932,15 +932,15 @@ abstract class _$$FilterVehicleCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$FilterVehicleCopyWithImpl<$Res>
+class _$FilterVehicleCopyWithImpl<$Res>
     extends _$BuyScreenEventCopyWithImpl<$Res>
-    implements _$$FilterVehicleCopyWith<$Res> {
-  __$$FilterVehicleCopyWithImpl(
-      _$FilterVehicle _value, $Res Function(_$FilterVehicle) _then)
-      : super(_value, (v) => _then(v as _$FilterVehicle));
+    implements $FilterVehicleCopyWith<$Res> {
+  _$FilterVehicleCopyWithImpl(
+      FilterVehicle _value, $Res Function(FilterVehicle) _then)
+      : super(_value, (v) => _then(v as FilterVehicle));
 
   @override
-  _$FilterVehicle get _value => super._value as _$FilterVehicle;
+  FilterVehicle get _value => super._value as FilterVehicle;
 
   @override
   $Res call({
@@ -952,17 +952,17 @@ class __$$FilterVehicleCopyWithImpl<$Res>
     Object? bodyType = freezed,
     Object? yearSpan = freezed,
   }) {
-    return _then(_$FilterVehicle(
+    return _then(FilterVehicle(
       brands: brands == freezed
-          ? _value._brands
+          ? _value.brands
           : brands // ignore: cast_nullable_to_non_nullable
               as List<String>?,
       fuels: fuels == freezed
-          ? _value._fuels
+          ? _value.fuels
           : fuels // ignore: cast_nullable_to_non_nullable
               as List<String>?,
       owner: owner == freezed
-          ? _value._owner
+          ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
               as List<int>?,
       budget: budget == freezed
@@ -1003,28 +1003,22 @@ class _$FilterVehicle implements FilterVehicle {
   final List<String>? _brands;
   @override
   List<String>? get brands {
-    final value = _brands;
-    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_brands!);
   }
 
   final List<String>? _fuels;
   @override
   List<String>? get fuels {
-    final value = _fuels;
-    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_fuels!);
   }
 
   final List<int>? _owner;
   @override
   List<int>? get owner {
-    final value = _owner;
-    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_owner!);
   }
 
   @override
@@ -1045,10 +1039,10 @@ class _$FilterVehicle implements FilterVehicle {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FilterVehicle &&
-            const DeepCollectionEquality().equals(other._brands, _brands) &&
-            const DeepCollectionEquality().equals(other._fuels, _fuels) &&
-            const DeepCollectionEquality().equals(other._owner, _owner) &&
+            other is FilterVehicle &&
+            const DeepCollectionEquality().equals(other.brands, brands) &&
+            const DeepCollectionEquality().equals(other.fuels, fuels) &&
+            const DeepCollectionEquality().equals(other.owner, owner) &&
             const DeepCollectionEquality().equals(other.budget, budget) &&
             const DeepCollectionEquality().equals(other.segment, segment) &&
             const DeepCollectionEquality().equals(other.bodyType, bodyType) &&
@@ -1058,9 +1052,9 @@ class _$FilterVehicle implements FilterVehicle {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(_brands),
-      const DeepCollectionEquality().hash(_fuels),
-      const DeepCollectionEquality().hash(_owner),
+      const DeepCollectionEquality().hash(brands),
+      const DeepCollectionEquality().hash(fuels),
+      const DeepCollectionEquality().hash(owner),
       const DeepCollectionEquality().hash(budget),
       const DeepCollectionEquality().hash(segment),
       const DeepCollectionEquality().hash(bodyType),
@@ -1068,8 +1062,8 @@ class _$FilterVehicle implements FilterVehicle {
 
   @JsonKey(ignore: true)
   @override
-  _$$FilterVehicleCopyWith<_$FilterVehicle> get copyWith =>
-      __$$FilterVehicleCopyWithImpl<_$FilterVehicle>(this, _$identity);
+  $FilterVehicleCopyWith<FilterVehicle> get copyWith =>
+      _$FilterVehicleCopyWithImpl<FilterVehicle>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1203,7 +1197,7 @@ abstract class FilterVehicle implements BuyScreenEvent {
   String? get bodyType => throw _privateConstructorUsedError;
   int? get yearSpan => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  _$$FilterVehicleCopyWith<_$FilterVehicle> get copyWith =>
+  $FilterVehicleCopyWith<FilterVehicle> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1304,11 +1298,11 @@ class _$BuyScreenStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$$_BuyScreenStateCopyWith<$Res>
+abstract class _$BuyScreenStateCopyWith<$Res>
     implements $BuyScreenStateCopyWith<$Res> {
-  factory _$$_BuyScreenStateCopyWith(
-          _$_BuyScreenState value, $Res Function(_$_BuyScreenState) then) =
-      __$$_BuyScreenStateCopyWithImpl<$Res>;
+  factory _$BuyScreenStateCopyWith(
+          _BuyScreenState value, $Res Function(_BuyScreenState) then) =
+      __$BuyScreenStateCopyWithImpl<$Res>;
   @override
   $Res call(
       {List<Segment> segmentsList,
@@ -1323,15 +1317,15 @@ abstract class _$$_BuyScreenStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_BuyScreenStateCopyWithImpl<$Res>
+class __$BuyScreenStateCopyWithImpl<$Res>
     extends _$BuyScreenStateCopyWithImpl<$Res>
-    implements _$$_BuyScreenStateCopyWith<$Res> {
-  __$$_BuyScreenStateCopyWithImpl(
-      _$_BuyScreenState _value, $Res Function(_$_BuyScreenState) _then)
-      : super(_value, (v) => _then(v as _$_BuyScreenState));
+    implements _$BuyScreenStateCopyWith<$Res> {
+  __$BuyScreenStateCopyWithImpl(
+      _BuyScreenState _value, $Res Function(_BuyScreenState) _then)
+      : super(_value, (v) => _then(v as _BuyScreenState));
 
   @override
-  _$_BuyScreenState get _value => super._value as _$_BuyScreenState;
+  _BuyScreenState get _value => super._value as _BuyScreenState;
 
   @override
   $Res call({
@@ -1345,25 +1339,25 @@ class __$$_BuyScreenStateCopyWithImpl<$Res>
     Object? isLoading = freezed,
     Object? showFilterList = freezed,
   }) {
-    return _then(_$_BuyScreenState(
+    return _then(_BuyScreenState(
       segmentsList: segmentsList == freezed
-          ? _value._segmentsList
+          ? _value.segmentsList
           : segmentsList // ignore: cast_nullable_to_non_nullable
               as List<Segment>,
       bodyTypesList: bodyTypesList == freezed
-          ? _value._bodyTypesList
+          ? _value.bodyTypesList
           : bodyTypesList // ignore: cast_nullable_to_non_nullable
               as List<BodyType>,
       brandsList: brandsList == freezed
-          ? _value._brandsList
+          ? _value.brandsList
           : brandsList // ignore: cast_nullable_to_non_nullable
               as List<Brand>,
       vehiclesList: vehiclesList == freezed
-          ? _value._vehiclesList
+          ? _value.vehiclesList
           : vehiclesList // ignore: cast_nullable_to_non_nullable
               as List<Vehicle>,
       filterList: filterList == freezed
-          ? _value._filterList
+          ? _value.filterList
           : filterList // ignore: cast_nullable_to_non_nullable
               as List<Vehicle>,
       isError: isError == freezed
@@ -1458,17 +1452,17 @@ class _$_BuyScreenState implements _BuyScreenState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BuyScreenState &&
+            other is _BuyScreenState &&
             const DeepCollectionEquality()
-                .equals(other._segmentsList, _segmentsList) &&
+                .equals(other.segmentsList, segmentsList) &&
             const DeepCollectionEquality()
-                .equals(other._bodyTypesList, _bodyTypesList) &&
+                .equals(other.bodyTypesList, bodyTypesList) &&
             const DeepCollectionEquality()
-                .equals(other._brandsList, _brandsList) &&
+                .equals(other.brandsList, brandsList) &&
             const DeepCollectionEquality()
-                .equals(other._vehiclesList, _vehiclesList) &&
+                .equals(other.vehiclesList, vehiclesList) &&
             const DeepCollectionEquality()
-                .equals(other._filterList, _filterList) &&
+                .equals(other.filterList, filterList) &&
             const DeepCollectionEquality().equals(other.isError, isError) &&
             const DeepCollectionEquality().equals(other.errorMsg, errorMsg) &&
             const DeepCollectionEquality().equals(other.isLoading, isLoading) &&
@@ -1479,11 +1473,11 @@ class _$_BuyScreenState implements _BuyScreenState {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(_segmentsList),
-      const DeepCollectionEquality().hash(_bodyTypesList),
-      const DeepCollectionEquality().hash(_brandsList),
-      const DeepCollectionEquality().hash(_vehiclesList),
-      const DeepCollectionEquality().hash(_filterList),
+      const DeepCollectionEquality().hash(segmentsList),
+      const DeepCollectionEquality().hash(bodyTypesList),
+      const DeepCollectionEquality().hash(brandsList),
+      const DeepCollectionEquality().hash(vehiclesList),
+      const DeepCollectionEquality().hash(filterList),
       const DeepCollectionEquality().hash(isError),
       const DeepCollectionEquality().hash(errorMsg),
       const DeepCollectionEquality().hash(isLoading),
@@ -1491,8 +1485,8 @@ class _$_BuyScreenState implements _BuyScreenState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_BuyScreenStateCopyWith<_$_BuyScreenState> get copyWith =>
-      __$$_BuyScreenStateCopyWithImpl<_$_BuyScreenState>(this, _$identity);
+  _$BuyScreenStateCopyWith<_BuyScreenState> get copyWith =>
+      __$BuyScreenStateCopyWithImpl<_BuyScreenState>(this, _$identity);
 }
 
 abstract class _BuyScreenState implements BuyScreenState {
@@ -1527,6 +1521,6 @@ abstract class _BuyScreenState implements BuyScreenState {
   bool get showFilterList => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_BuyScreenStateCopyWith<_$_BuyScreenState> get copyWith =>
+  _$BuyScreenStateCopyWith<_BuyScreenState> get copyWith =>
       throw _privateConstructorUsedError;
 }

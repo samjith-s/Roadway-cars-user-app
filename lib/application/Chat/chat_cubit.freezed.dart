@@ -64,23 +64,22 @@ class _$ChatStateCopyWithImpl<$Res> implements $ChatStateCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$_ChatStateCopyWith<$Res> implements $ChatStateCopyWith<$Res> {
-  factory _$$_ChatStateCopyWith(
-          _$_ChatState value, $Res Function(_$_ChatState) then) =
-      __$$_ChatStateCopyWithImpl<$Res>;
+abstract class _$ChatStateCopyWith<$Res> implements $ChatStateCopyWith<$Res> {
+  factory _$ChatStateCopyWith(
+          _ChatState value, $Res Function(_ChatState) then) =
+      __$ChatStateCopyWithImpl<$Res>;
   @override
   $Res call({List<Chat> totalChats, bool isLoading, bool isError});
 }
 
 /// @nodoc
-class __$$_ChatStateCopyWithImpl<$Res> extends _$ChatStateCopyWithImpl<$Res>
-    implements _$$_ChatStateCopyWith<$Res> {
-  __$$_ChatStateCopyWithImpl(
-      _$_ChatState _value, $Res Function(_$_ChatState) _then)
-      : super(_value, (v) => _then(v as _$_ChatState));
+class __$ChatStateCopyWithImpl<$Res> extends _$ChatStateCopyWithImpl<$Res>
+    implements _$ChatStateCopyWith<$Res> {
+  __$ChatStateCopyWithImpl(_ChatState _value, $Res Function(_ChatState) _then)
+      : super(_value, (v) => _then(v as _ChatState));
 
   @override
-  _$_ChatState get _value => super._value as _$_ChatState;
+  _ChatState get _value => super._value as _ChatState;
 
   @override
   $Res call({
@@ -88,9 +87,9 @@ class __$$_ChatStateCopyWithImpl<$Res> extends _$ChatStateCopyWithImpl<$Res>
     Object? isLoading = freezed,
     Object? isError = freezed,
   }) {
-    return _then(_$_ChatState(
+    return _then(_ChatState(
       totalChats: totalChats == freezed
-          ? _value._totalChats
+          ? _value.totalChats
           : totalChats // ignore: cast_nullable_to_non_nullable
               as List<Chat>,
       isLoading: isLoading == freezed
@@ -135,9 +134,9 @@ class _$_ChatState implements _ChatState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ChatState &&
+            other is _ChatState &&
             const DeepCollectionEquality()
-                .equals(other._totalChats, _totalChats) &&
+                .equals(other.totalChats, totalChats) &&
             const DeepCollectionEquality().equals(other.isLoading, isLoading) &&
             const DeepCollectionEquality().equals(other.isError, isError));
   }
@@ -145,14 +144,14 @@ class _$_ChatState implements _ChatState {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(_totalChats),
+      const DeepCollectionEquality().hash(totalChats),
       const DeepCollectionEquality().hash(isLoading),
       const DeepCollectionEquality().hash(isError));
 
   @JsonKey(ignore: true)
   @override
-  _$$_ChatStateCopyWith<_$_ChatState> get copyWith =>
-      __$$_ChatStateCopyWithImpl<_$_ChatState>(this, _$identity);
+  _$ChatStateCopyWith<_ChatState> get copyWith =>
+      __$ChatStateCopyWithImpl<_ChatState>(this, _$identity);
 }
 
 abstract class _ChatState implements ChatState {
@@ -169,6 +168,6 @@ abstract class _ChatState implements ChatState {
   bool get isError => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ChatStateCopyWith<_$_ChatState> get copyWith =>
+  _$ChatStateCopyWith<_ChatState> get copyWith =>
       throw _privateConstructorUsedError;
 }

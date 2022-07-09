@@ -8,17 +8,17 @@ import 'package:roadway/application/buy/buy_screen_bloc.dart';
 import 'package:roadway/application/internet/internet_cubit.dart';
 import 'package:roadway/core/constants/colors.dart';
 import 'package:roadway/core/constants/texts.dart';
-import 'package:roadway/core/toast.dart';
+import 'package:roadway/core/utils/toast.dart';
 import 'package:roadway/presentation/buy/screens/search_result_seeall_sceen.dart';
 import 'package:roadway/presentation/buy/widgets/buyscreen_filter_button_widget.dart';
-import 'package:roadway/presentation/buy/widgets/filter_brands_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_brands_view.dart';
 import 'package:roadway/presentation/buy/widgets/available_vehicles_gridview_widget.dart';
-import 'package:roadway/presentation/buy/widgets/filter_bodytype_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_budget_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_fueltype_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_number_owner_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_segments_view.dart';
-import 'package:roadway/presentation/buy/widgets/filter_year_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_bodytype_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_budget_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_fueltype_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_number_owner_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_segments_view.dart';
+import 'package:roadway/presentation/buy/widgets/filter_view_widgets/filter_year_view.dart';
 import 'package:roadway/presentation/buy/widgets/large_topscreen_text_widget.dart';
 
 class BuyScreen extends StatelessWidget {

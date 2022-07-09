@@ -7,7 +7,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:http/http.dart' as http;
-import 'package:roadway/core/firebase_keys.dart';
+import 'package:roadway/core/utils/firebase_keys.dart';
 
 class LocalNotificationService {
   late AndroidNotificationChannel channel;

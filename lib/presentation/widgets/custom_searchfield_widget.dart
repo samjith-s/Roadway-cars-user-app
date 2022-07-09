@@ -28,8 +28,7 @@ class CustomSearchFieldWidget extends StatelessWidget {
           children: [
             Expanded(
               child: TextField(
-                focusNode: focusOn ? FocusNode() : null,
-                autofocus: true,
+                autofocus: focusOn ? true : false,
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   hintText: "Find your favorate car..",

@@ -12,7 +12,7 @@ import 'package:roadway/application/sell_request/sell_request_cubit.dart';
 import 'package:roadway/application/user/user_cubit.dart';
 import 'package:roadway/core/constants/colors.dart';
 import 'package:roadway/core/constants/texts.dart';
-import 'package:roadway/core/toast.dart';
+import 'package:roadway/core/utils/toast.dart';
 import 'package:roadway/domain/pre_booking/pre_booking_model.dart';
 import 'package:roadway/presentation/buy/screens/buy_screen.dart';
 import 'package:roadway/presentation/sell/widgets/apply_button_widget.dart';
